@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Unos </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 style="font-size: 50px; color: #86E551;"> Heading 1 - 1 </h1>
+	<h1> Heading 1 - 2 </h1>
+	<h1> Heading 1 - 3 </h1>
+	<h2> Heading 2 - 1 </h2>
+	<h2> Heading 2 - 2 </h2>
+	<h2 id="test"> Heading 2 - 3 </h2>
+
+	<h1> My name is
+		<span id="catname">Boris</span>
+	</h1>
+
+	<h1> My name is
+		<span id="input">_______</span>
+	</h1>
+
+	<div>
+		background color
+		<input type ='text', class = 'all doge'>
+	</div>
+
+	<div>
+		corners
+		<input type = 'text', class = 'all corners', style = 'padding: 30px'>
+	</div>
+
+
+
+
+  <script>
+		// var name = prompt("What is your name?")
+		// if(name == "Boris"){
+		// 	alert("HI BORIS!!")
+		// }
+		// else
+		// 	alert("Wrong")
+		// name = name.toLowerCase()
+		// input.innerText = name
+
+		var bgColor = document.querySelector(".doge")
+		var bgCorners = document.querySelector(".corners")
+		var body = document.querySelector("body")
+
+		function func(e){
+			var body = document.querySelector("body")
+			body.style.backgroundColor = e.target.value
+		};
+
+		function func2(e){
+			var body = document.querySelectorAll(".all")
+			var temp = e.target.value
+			console.log(body)
+			for(i = 0; i < body.length; i++) {
+				console.log(body[i])
+				body[i].style.borderRadius = temp + "px"
+			}
+			console.log(temp + "px")
+		};
+
+		bgColor.addEventListener('keyup', func)
+		bgCorners.addEventListener('keyup', func2)
+
+
+
+  </script>
+	<!-- <script>
+	  // var name = "I am Boris";
+		// var profession = "teacher";
+		// var val = 2;
+		// console.log("Name:", name)
+		// console.warn("Stranger DANGER")
+		// console.error("AAAHHHHH")
+		// var test = document.getElementById("test")
+		// test.innerHTML = "<b>Hello</b> worlds"
+
+		// var catname = document.getElementById("catname");
+		// var zep = catname.innerHTML;
+		// var cats = zep + " and Henry"
+		// var uppercat = cats.toUpperCase()
+		// var lowercat = cats.toLowerCase()
+		// catname.innerHTML = uppercat + " BORIS" + " " + lowercat
+	</script> -->
+
+
+
+
+</body>
+</html>

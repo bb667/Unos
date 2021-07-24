@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <h1>OPP Modal</h1>
+
+  <style>
+  .textbox {position: fixed; top: 50%; left: 50%; border: 5px solid black;
+     background-color: white; width: 20%;  max-width: 800px; padding: 20px; transform: translate(-50%, -50%); display: none;
+ }
+  </style>
+
+  <body>
+    <button class = 'but1'>I open Textbox!</button>
+
+    <div class = "textbox">
+      <h1>THIS IS WHAT A PARAGRAH IS</h1>
+      <p>How such documents are actually stored depends on the file format. For example, HTML uses the
+      </p>
+      <p> tag as a paragraph container. In plaintext files, there are two common formats. The pre-formatted text will have a newline at the end of every physical line, and two newlines at the end of a paragraph, creating a blank line. An alternative is to only put newlines at the end of each paragraph, and leave word wrapping up to the application that displays or processes the text. </p>
+      <button class = 'but2'>I close Textbox!</button>
+    </div>
+
+
+
+    <script>
+      // var but1 = document.querySelector(".but1")
+      // var textbox1 = document.querySelector(".textbox")
+      // var but2 = document.querySelector(".but2")
+      //
+      // but1.addEventListener("click", function(e){
+      //   textbox1.style.display = 'block';
+      //   but2.style.display = 'block'
+      // })
+      //
+      // but2.addEventListener("click", function(e){
+      //   textbox1.style.display = 'none'
+      // })
+
+        var but1 = document.querySelector(".but1")
+        var but2 = document.querySelector(".but2")
+
+        class Modal {
+          constructor(){
+            this.modal = document.querySelector(".textbox")
+          }
+
+          open() {
+            this.modal.style.display = 'block'
+          }
+
+          close(){
+            this.modal.style.display = 'none'
+          }
+        }
+
+        var modal  = new Modal()
+        but1.addEventListener("click", function(e){
+          modal.open()
+        })
+
+        but2.addEventListener("click", function(e){
+          modal.close()
+        })
+
+
+
+
+    </script>
+
+
+
+  </body>
+
+
+
+
+
+</html>

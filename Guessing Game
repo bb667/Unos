@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>  
+  Guess a number
+  <input class = "guess">
+  </div>
+
+  <script>
+    var bgColor = document.querySelector(".bgColor")
+    var tColor = document.querySelector(".tColor")
+    var fSize = document.querySelector(".fSize")
+    var body = document.querySelector("body")
+
+    bgColor.addEventListener('keyup', function(e){
+    console.log(e.target.value)
+    body.style.backgroundColor = e.target.value
+    })
+
+    tColor.addEventListener('keyup', function(e){
+    body.style.color = e.target.value
+    })
+
+    fSize.addEventListener('keyup', function(e){
+    body.style.fontSize = e.target.value + "mm"
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<style> .buttext{position: fixed; top:50%; border: 1px solid red;
+ background-color: blue; width: 50%; padding: 20px; transform:(-50%, -50%); display: none;
+ }
+</style>
+<h1> OPP Modal</h1>
+<body>
+  <div>
+    <button class = "but1">Open Text Area </button>
+
+  </div>
+
+  <div>
+
+    <input type = 'text' class = 'buttext'></input>
+    <button class = "but2" style = "200px; display: none"></button>
+
+  </div>
+
+
+
+  <script>
+
+    var but1 = document.querySelector(".but1")
+    var buttext1 = document.querySelector(".buttext")
+    var but2 = document.querySelector(".but2")
+
+    console.log(buttext1.style.backgroundColor)
+
+    but1.addEventListener("click", function(){
+      buttext1.style.display = 'inital'
+    })
+
+    // but1.addEventListener("click", function(){
+    //   textbox.innerText(type = 'text', style =  "padding: 50mm")
+    //   // textbox.setAtribute('type','text')
+    //   // textbox.setAtribute('style', "padding: 50mm")
+    //   buttext.innerText = "Close Text Area?"
+    //   but2.setAtribute('type', 'button')
+    //   but2.setAtribute('class', 'but2')
+    // })
+
+    // but2.addEventListener('click', function(){
+    //   textbox.innerHTML = null
+    //   buttext.innerText = null
+    //   but2.innerHTML = null
+    // })
+
+  </script>
+
+</body>
+</html>

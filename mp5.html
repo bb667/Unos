@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div> Background Color
+  <input class = "bgColor">
+  </div>
+
+  <div> Text Color
+  <input class = "tColor">
+  </div>
+
+
+  <div> Font Size
+  <input class = "fSize">
+  </div>
+
+  <script>
+    var bgColor = document.querySelector(".bgColor")
+    var tColor = document.querySelector(".tColor")
+    var fSize = document.querySelector(".fSize")
+    var body = document.querySelector("body")
+
+    bgColor.addEventListener('keyup', function(e){
+    console.log(e.target.value)
+    body.style.backgroundColor = e.target.value
+    })
+
+    tColor.addEventListener('keyup', function(e){
+    body.style.color = e.target.value
+    })
+
+    fSize.addEventListener('keyup', function(e){
+    body.style.fontSize = e.target.value + "mm"
+    })
+  </script>
+
+</body>
+</html>

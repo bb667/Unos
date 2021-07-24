@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Final Project </title>
+</head>
+<!-- <style> .H1{font-size: 200px; color: #86E551; text-align: center; padding: 200px;
+}</style> -->
+
+<body>
+
+<h1 id = "h1", style = "font-size: 200px; color: #86E551; transform: translate(500px, 300px); letter-spacing: -25px; max-width: 500px; white-space: nowrap;">
+<span1>F</span1>
+<span2>i</span2>
+<span3>n</span3>
+<span4>a</span4>
+<span5>l</span5>
+<span6>  </span6>
+<span7>P</span7>
+<span8>r</span8>
+<span9>o</span9>
+<span10>j</span10>
+<span11>e</span11>
+<span12>c</span12>
+<span13>t</span13>
+
+</h1>
+
+<script>
+
+
+for (var i = 1; i <= 13; i++) {
+  function mouseOver(){
+    fl.style.color = "orange"
+    fl.style.fontSize = "200px"
+    fl.style.fontStyle = "italic"
+  }
+
+  function mouseOut(){
+    fl.style.color = '#86E551'
+    fl.style.fontSize = "200px"
+    fl.style.fontStyle = "normal"
+  }
+
+  console.log(i)
+  let fl = document.querySelector("span"+ i)
+  console.log(fl)
+  fl.addEventListener("mouseover", mouseOver)
+  fl.addEventListener("mouseout", mouseOut)
+}
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+  <temp> Guess a number </temp>
+  <input class = "guess">
+  </div>
+
+  <script>
+
+    var correct_number = 5
+    var guessed_number = document.querySelector(".guess")
+    var body = document.querySelector("body")
+    var tempt = document.querySelector("temp")
+
+    guessed_number.addEventListener('keyup', function(e){
+    console.log(e.target.value)
+    if (correct_number != e.target.value) {
+
+        body.style.backgroundColor = "red"
+        tempt.innerText = "Wrong! Guess again"
+        console.log(tempt)
+    } else {body.style.backgroundColor = "green"
+    tempt.innerText = "You got it, the number is " + correct_number + "!"
+    }
+    })
+  </script>
+
+</body>
+</html>

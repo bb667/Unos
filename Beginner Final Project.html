@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Final Project </title>
+</head>
+<!-- <style> .H1{font-size: 200px; color: #86E551; text-align: center; padding: 200px;
+}</style> -->
+
+<body>
+
+<h1 id = "h1", style = "font-size: 200px; color: #86E551; transform: translate(700px, 400px);  max-width: 1115px"> _______ </h1>
+
+<script>
+  var fp = document.querySelector("h1")
+  fp.innerHTML = "Final Project"
+
+  var arr = fp.innerText.split('')
+  console.log(arr)
+
+  var arr2 = arr.join('')
+  console.log(arr2)
+
+
+  // fp.addEventListener("click", function(){
+  //   fp.style.fontSize = "300px"
+  //   fp.style.fontStyle = "italic"
+  // })
+
+
+  function mouseOver(){
+    fp.style.color = "#86E551"
+    fp.style.fontSize = "200px"
+    fp.style.fontStyle = "italic"
+  }
+
+  function mouseOut(){
+    fp.style.color = 'orange'
+    fp.style.fontSize = "200px"
+    fp.style.fontStyle = "normal"
+  }
+
+  console.log(arr2[5])
+  fp.addEventListener("mouseover", mouseOver)
+  fp.addEventListener("mouseout", mouseOut)
+</script>
+
+
+</body>
+</html>
